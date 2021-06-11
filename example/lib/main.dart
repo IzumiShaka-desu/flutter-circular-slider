@@ -152,7 +152,7 @@ class _SleepPageState extends State<SleepPage> {
           _formatBedTime('IN THE', inBedTime),
           _formatBedTime('OUT OF', outBedTime),
         ]),
-        FlatButton(
+        MaterialButton(
           child: Text('S H U F F L E'),
           color: baseColor,
           textColor: Colors.white,

@@ -52,11 +52,11 @@ double getSweepAngle(double init, double end) {
 }
 
 List<Offset> getSectionsCoordinatesInCircle(
-    Offset center, double radius, int sections) {
+    Offset? center, double radius, int sections) {
   var intervalAngle = (pi * 2) / sections;
   return List<int>.generate(sections, (int index) => index).map((i) {
     var radians = (pi / 2) + (intervalAngle * i);
-    return radiansToCoordinates(center, radians, radius);
+    return radiansToCoordinates(center!, radians, radius);
   }).toList();
 }
 
